@@ -1,9 +1,7 @@
-jQuery(document).ready(function() {
+const menuButton = document.querySelector('.menu-button');
+const menu = document.querySelector('.menu');
 
-    var degrees = 0,
-        timer = setInterval(function() {
-
-            degrees++;
-            jQuery('boddy').css('background-image', 'linear-gradient(' + degrees + 'deg, #efefbb, #d4d3dd');
-        }, 60000 / 360);
+menuButton.addEventListener('click', function () {
+    menuButton.classList.toggle('menu-button-active');
+    menu.classList.toggle('menu-active');
 })
