@@ -68,7 +68,7 @@ body {
     height: 168px;
     margin: 45px auto;
     margin-bottom: 70px;
-    background-image: url(../images/img1.png);
+    background-image: url(../images/main-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -110,6 +110,7 @@ body {
     width: 692px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0 50%;
 }
 .description-container {
     display: flex;
@@ -165,7 +166,19 @@ body {
     color: #FEEFE2;
     text-decoration: none;
 }
-.about {
+.title-container {
+    color: #000000;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 77px;
+    line-height: 90px;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+.text-about {
     color: #000000;
     font-size: larger;
     text-align: center;
@@ -176,8 +189,30 @@ body {
     text-align: center;
     background-color: #ffffff;
     padding: 10px;
-    margin-top: 25%;
+    margin-top: 10%;
     margin-bottom: 50px;
+}
+.table-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.gallery-image {
+    height: 249px;
+    width: 380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 10px;
+    border: 3px solid #658BBA;
+}
+.bord {
+    border: 3px solid #B0B4B9;
+}
+.gallery-image:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
 }
 /* footer */
 .footer {
@@ -225,6 +260,10 @@ body {
     .description-container {
         display: block;
     }
+    .table-gallery {
+        display: inline-block;
+        margin: 0 70px;
+    }
 }
 @media (max-width: 840px) {
     .main-image {
@@ -255,6 +294,17 @@ body {
     }
     .menu {
         display: none;
+    }
+    .title-container {
+        margin-bottom: 1%;
+    }
+    .gallery-image {
+        height: 200px;
+        width: 332px;
+        margin: 10px 0;
+    }
+    .table-gallery {
+        margin: 0;
     }
     .menu-button {
         display: block;
