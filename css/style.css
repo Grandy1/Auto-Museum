@@ -1,11 +1,14 @@
 body {
     background-color: #F5F5F5;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Roboto', sans-serif;
     color: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+h6 {
+    font-weight: 600;
 }
 .header {
     margin-bottom: 40px;
@@ -99,35 +102,66 @@ body {
     background-repeat: no-repeat;
 }
 .description-icon {
-    margin: 0px 10px;
+    margin: 0 10px;
     width: 263px;
     height: 127px;
     background: rgba(255, 255, 255, 0.9);
     color: #000000;
+    text-align: center;
 }
 .photo {
-    height: 440px;
+    min-height: 100px;
     width: 692px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 50%;
+    background-size: contain;
+    margin-right: 10px;
+    background-position: 50% 50%;
 }
 .description-container {
     display: flex;
 }
 .description-photo {
     background-color: #ffffff;
-    height: 100px;
+    height: auto;
     width: 486px;
     color: #000000;
     margin-left: 25px;
+    padding: 10px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: justify;
+    text-indent: 1.5em;
+}
+.description-text {
+    position: relative;
+    top: 30%;
 }
 .characteristic {
     background-color: #ffffff;
+    height: auto;
     color: #000000;
     margin-top: 30px;
-    height: 60px;
+    padding: 10px;
     margin-bottom: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+.property::after {
+    content: '. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .';
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.text-property {
+    float: left;
+}
+.text-value {
+    float: right;
 }
 .back {
     color: #6298D9;
@@ -175,7 +209,6 @@ body {
     line-height: 90px;
     display: flex;
     justify-content: center;
-    margin-top: 7%;
     margin-bottom: 10%;
 }
 .text-about {
@@ -203,7 +236,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin: 0 10px;
+    margin: 10px 10px;
     border: 3px solid #658BBA;
 }
 .bord {
@@ -218,7 +251,7 @@ body {
 .footer {
     background-color: black;
     padding: 20px 0;
-    margin-top: auto;
+    margin-top: 30px;
 }
 .footer-container {
     width: 95%;
@@ -253,12 +286,9 @@ body {
         margin-bottom: 30px;
     }
     .description-photo {
-        height: 100px;
         width: 100%;
         margin: 0;
-    }
-    .description-container {
-        display: block;
+        margin-right: 30px;
     }
     .table-gallery {
         display: inline-block;
@@ -271,6 +301,9 @@ body {
     }
     .container {
         width: 95%;
+    }
+    .description-container {
+        display: block;
     }
     .table {
         display: inline-block;
